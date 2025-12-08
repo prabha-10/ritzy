@@ -8,9 +8,11 @@ import { Services } from './pages/Services';
 import { ServiceDetail } from './pages/ServiceDetail';
 import { Products } from './pages/Products';
 import { ProductDetail } from './pages/ProductDetail';
+import { PortfolioDetail } from './pages/PortfolioDetail';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Portfolio } from './pages/Portfolio';
+import { Admin } from './pages/Admin';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -48,22 +50,32 @@ const App: React.FC = () => {
   return (
     <HashRouter>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen bg-smart-bg text-smart-text selection:bg-smart-accent selection:text-white font-sans">
-        <Header />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/:id" element={<ServiceDetail />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/products/:id" element={<ProductDetail />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Routes>
+        {/* Admin page without header/footer */}
+        <Route path="/admin" element={<Admin />} />
+
+        {/* Regular pages with header/footer */}
+        <Route path="*" element={
+          <div className="flex flex-col min-h-screen bg-smart-bg text-smart-text selection:bg-smart-accent selection:text-white font-sans">
+            <Header />
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/services/:id" element={<ServiceDetail />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/products/:id" element={<ProductDetail />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/portfolio/:id" element={<PortfolioDetail />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+        } />
+      </Routes>
     </HashRouter>
   );
 };

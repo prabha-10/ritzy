@@ -1,0 +1,31 @@
+{
+  "id": "security",
+  "slug": "security",
+  "title": "Smart Security",
+  "shortDescription": "Advanced surveillance and access control for peace of mind.",
+  "category": "Exterior",
+  "icon": "ShieldCheck",
+  "features": ["Face Recognition", "Smart Locks", "Remote Monitoring"],
+  "cardImage": "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=600&fit=crop&auto=format&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1557324232-b8917d3c3d63?auto=format&fit=crop&w=2000&q=80",
+  "subtitle": "Peace of Mind, redefined",
+  "introTitle": "Advanced protection for your family and property.",
+  "introText": "Our integrated security solutions go beyond simple alarms. We combine high-definition surveillance, smart access control, and automated deterrents to create a robust safety shield around your home.",
+  "featureSections": [
+    {
+      "title": "Intelligent Surveillance",
+      "description": "AI-powered cameras distinguish between people, pets, and vehicles, sending you only the alerts that matter.",
+      "image": "https://images.unsplash.com/photo-1557324232-b8917d3c3d63?auto=format&fit=crop&w=800"
+    },
+    {
+      "title": "Smart Locks & Access",
+      "description": "Manage entry for family, guests, and service providers remotely. Receive notifications whenever a door is unlocked.",
+      "image": "https://images.unsplash.com/photo-1558002038-1091a16610d6?auto=format&fit=crop&w=800"
+    },
+    {
+      "title": "Perimeter Defense",
+      "description": "Automated lighting and motion sensors create a deterrent barrier before an intruder even reaches your home.",
+      "image": "https://images.unsplash.com/photo-1563310805-5f58f5720032?auto=format&fit=crop&w=800"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "smart-living",
+    "slug": "smart-living",
+    "title": "Smart Living",
+    "shortDescription": "Seamlessly integrate control over lighting, climate, and entertainment.",
+    "category": "Home Automation",
+    "icon": "Home",
+    "features": [
+        "Voice Control",
+        "Automated Scenes",
+        "Energy Monitoring"
+    ],
+    "cardImage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop&auto=format&q=80",
+    "heroImage": "https://images.unsplash.com/photo-1600566752355-35792bedcfe1?auto=format&fit=crop&w=2000&q=80",
+    "subtitle": "A Home That Thinks for You",
+    "introTitle": "Orchestrate your entire home environment with a single touch.",
+    "introText": "Smart Living elevates your daily routine by unifying lighting, shades, climate, and entertainment into a single, intuitive system. Whether you are waking up to a gentle sunrise scene or securing your home for the night, Ritzy ensures that your environment adapts to your needs effortlessly.",
+    "featureSections": [
+        {
+            "title": "Lighting Control",
+            "description": "Create the perfect ambiance for any occasion with dimmable, color-tunable lighting scenes that can be recalled instantly.",
+            "image": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=800"
+        },
+        {
+            "title": "Automated Shading",
+            "description": "Protect your interiors and manage natural light with motorized shades that adjust automatically to the sun's position.",
+            "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800"
+        },
+        {
+            "title": "Voice Integration",
+            "description": "Hands-free control for when your hands are full. Simply ask your home to turn on the lights, play music, or set the temperature.",
+            "image": "https://images.unsplash.com/photo-1589440615431-1963a7c50269?auto=format&fit=crop&w=800"
+        }
+    ]
+}

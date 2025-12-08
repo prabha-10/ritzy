@@ -1,75 +1,273 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Section } from '../components/ui/Section';
 import { Button } from '../components/ui/Button';
 import { Link } from 'react-router-dom';
-
-const PROCESS_STEPS = [
-  { title: 'Consultation', desc: 'We listen to your lifestyle needs and architectural vision.' },
-  { title: 'System Design', desc: 'Engineering a bespoke schematic tailored to your floorplan.' },
-  { title: 'Installation', desc: 'Precision deployment by certified technicians with zero mess.' },
-  { title: 'Support', desc: 'Ongoing maintenance and remote monitoring for 100% uptime.' },
-];
+import { ArrowRight } from 'lucide-react';
 
 export const About: React.FC = () => {
   return (
-    <div className="pt-24 bg-smart-bg">
-       {/* Hero */}
-       <div className="relative h-[50vh] rounded-b-[3rem] overflow-hidden mx-4 md:mx-8">
-         <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=2000" className="w-full h-full object-cover" alt="About Hero" />
-         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-           <div className="text-center max-w-4xl px-6">
-             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">The iHaven Standard</h1>
-             <p className="text-xl text-white/90 font-light">Architecting the invisible layer of luxury.</p>
-           </div>
-         </div>
-       </div>
+    <div className="bg-white">
+      {/* Hero Image Section - Tandem Style */}
+      <div className="relative h-[70vh] min-h-[600px] overflow-hidden">
+        <img
+          src="/assets/images/img_e2877fa82205.jpg"
+          alt="Smart Home"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/10" />
+      </div>
 
-       {/* Mission */}
-       <Section>
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-           <div>
-             <span className="text-smart-accent font-bold uppercase tracking-widest text-sm mb-4 block">Who We Are</span>
-             <h2 className="text-4xl font-bold text-smart-text mb-6">Technology meets tranquility.</h2>
-             <p className="text-gray-500 text-lg mb-6 leading-relaxed">
-               iHaven was founded on a simple premise: sophisticated technology should simplify life, not complicate it. We bridge the gap between complex engineering and intuitive user experience.
-             </p>
-             <p className="text-gray-500 text-lg leading-relaxed">
-               Working alongside top architects, interior designers, and builders, we ensure that our systems blend seamlessly into the aesthetic of your home or office. No clutter, no confusion—just pure, effortless control.
-             </p>
-           </div>
-           <div className="relative">
-             <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800" className="w-full h-96 object-cover rounded-3xl shadow-2xl" alt="Team working" />
-             <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-xl max-w-xs hidden md:block">
-                <p className="text-4xl font-bold text-smart-accent mb-2">10+</p>
-                <p className="text-gray-500 font-medium">Years of excellence in home automation.</p>
-             </div>
-           </div>
-         </div>
-       </Section>
+      {/* Section 1 - Our Approach (Image Right) */}
+      <Section className="pt-32 pb-24 bg-gray-50">
+        {/* Centered Section Title */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">
+            APPROACH
+          </h2>
+        </motion.div>
 
-       {/* Process */}
-       <Section className="bg-white rounded-[3rem] my-12 mx-4 md:mx-8">
-         <div className="text-center mb-16">
-           <h2 className="text-4xl font-bold text-smart-text">Our Methodology</h2>
-         </div>
-         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-           {PROCESS_STEPS.map((step, idx) => (
-             <div key={idx} className="relative p-8 bg-smart-bg rounded-2xl hover:bg-smart-dark hover:text-white transition-colors group">
-               <span className="absolute -top-5 left-6 text-6xl font-bold text-gray-200 group-hover:text-gray-700 transition-colors">0{idx + 1}</span>
-               <h3 className="text-xl font-bold mb-4 relative z-10">{step.title}</h3>
-               <p className="text-gray-500 group-hover:text-gray-300 text-sm relative z-10 leading-relaxed">{step.desc}</p>
-             </div>
-           ))}
-         </div>
-       </Section>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Our Approach
+            </h3>
+            <h4 className="text-xl text-gray-500 mb-8 font-light">
+              Technology that thinks for you.
+            </h4>
 
-        <Section className="text-center py-24">
-           <h2 className="text-4xl font-bold text-smart-text mb-8">Ready to transform your space?</h2>
-           <Link to="/contact">
-             <Button size="lg">Start Your Project</Button>
-           </Link>
-        </Section>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Seamless Integration
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  We design systems that disappear into your lifestyle. From lighting to climate control, everything works in harmony, responding to your needs before you even ask.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Premium Quality
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  We partner with world-leading brands and use only the finest components. Every installation is a masterpiece of engineering disguised as simplicity.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Future-Proof Solutions
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  Our systems are built to evolve. As technology advances, your home stays ahead—always smart, never outdated.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative h-[600px] rounded-3xl overflow-hidden bg-gray-200"
+          >
+            <img
+              src="/assets/images/img_dc1759ad49a0.jpg"
+              alt="Smart Home Interior"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </motion.div>
+        </div>
+      </Section>
+
+      {/* Section 2 - Our Expertise (Image Left) */}
+      <Section className="py-24">
+        {/* Centered Section Title */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">
+            EXPERTISE
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="relative h-[600px] rounded-3xl overflow-hidden order-2 lg:order-1 bg-gray-200"
+          >
+            <img
+              src="/assets/images/img_8cd5de336830.jpg"
+              alt="Advanced Technology"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="order-1 lg:order-2"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Our Expertise
+            </h2>
+            <h3 className="text-xl text-gray-500 mb-8 font-light">
+              Hands-on precision.
+            </h3>
+
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Complete System Design
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  From concept to completion, our engineers craft bespoke automation solutions tailored to your architecture, lifestyle, and aesthetic vision.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Professional Installation
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  Our certified technicians bring decades of combined experience. Every wire, every sensor, every interface—installed with meticulous care and zero disruption.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Continuous Innovation
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  We stay at the forefront of smart home technology, constantly testing new solutions to bring you tomorrow's innovations today.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </Section>
+
+      {/* Section 3 - Our Commitment (Image Right) */}
+      <Section className="py-24 bg-gray-50">
+        {/* Centered Section Title */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">
+            COMMITMENT
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Our Commitment
+            </h2>
+            <h3 className="text-xl text-gray-500 mb-8 font-light">
+              We'll take care of everything.
+            </h3>
+
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  White-Glove Service
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  From the first consultation to long after installation, we treat your home with the respect it deserves. Clear communication, pristine workspaces, and a genuine partnership approach.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Always Available
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  24/7 support means peace of mind. Whether it's a simple question or urgent troubleshooting, our team is just a call away—responsive, knowledgeable, and ready to help.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  Built to Last
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  We don't just install systems—we build lasting relationships. Many of our clients return for expansions, upgrades, and new projects. That trust is everything to us.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative h-[600px] rounded-3xl overflow-hidden bg-gray-200"
+          >
+            <img
+              src="/assets/images/img_91b150fa96d3.jpg"
+              alt="Luxury Living"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </motion.div>
+        </div>
+      </Section>
+
+      {/* CTA Section */}
+      <Section className="py-32 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            We're easy to reach and even easier to work with.
+          </h2>
+          <p className="text-xl text-gray-500 mb-10">
+            Let's start a conversation about transforming your space.
+          </p>
+          <Link to="/contact">
+            <Button size="lg" className="group">
+              Get in Touch
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+            </Button>
+          </Link>
+        </motion.div>
+      </Section>
     </div>
   );
 };
