@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Söhne Font Face Definitions */
+@font-face {
+  font-family: 'Sohne';
+  src: url('/assets/fonts/Sohne/Standard/TestSöhne-Leicht.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/assets/fonts/Sohne/Standard/TestSöhne-Buch.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/assets/fonts/Sohne/Standard/TestSöhne-Kräftig.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/assets/fonts/Sohne/Standard/TestSöhne-Halbfett.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/assets/fonts/Sohne/Standard/TestSöhne-Fett.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/assets/fonts/Sohne/Standard/TestSöhne-Extrafett.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  background-color: #F7F7F0;
+  color: #111827;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sohne", "Helvetica World", Helvetica, Arial, sans-serif;
+}
+
+/* Lenis Recommended CSS */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F7F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aacc85;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

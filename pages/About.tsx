@@ -10,7 +10,7 @@ export const About: React.FC = () => {
   return (
     <div className="bg-white">
       {/* Hero Image Section - Tandem Style */}
-      <div className="relative h-[70vh] min-h-[600px] overflow-hidden">
+      <div className="relative h-[70vh] min-h-[400px] md:min-h-[600px] overflow-hidden">
         <img
           src="/assets/images/img_e2877fa82205.jpg"
           alt="Smart Home"
@@ -20,20 +20,20 @@ export const About: React.FC = () => {
       </div>
 
       {/* Section 1 - Our Approach (Image Right) */}
-      <Section className="pt-32 pb-24 bg-gray-50">
+      <Section className="pt-20 md:pt-32 pb-16 md:pb-24 bg-gray-50">
         {/* Centered Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">
             APPROACH
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}

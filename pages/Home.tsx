@@ -92,12 +92,11 @@ export const Home: React.FC = () => {
               <img
                 src={activeSlide.image}
                 alt={activeSlide.title}
-                className="w-full h-full object-cover opacity-80"
+                className="w-full h-full object-cover opacity-60"
               />
-              {/* Darker overlay for better text contrast */}
-              <div className="absolute inset-0 bg-black/40" />
-              <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/90" />
+              <div className="absolute inset-0 bg-smart-darkgreen/40 mix-blend-multiply" />
             </motion.div>
           </AnimatePresence>
 
@@ -115,7 +114,7 @@ export const Home: React.FC = () => {
                   transition={{ duration: 0.6, ease: "easeOut" }}
                   className="flex flex-col items-center max-w-7xl mx-auto w-full"
                 >
-                  <h1 className="text-[48px] md:text-[72px] lg:text-[96px] font-semibold text-white leading-[0.9] mb-8 uppercase tracking-widest drop-shadow-2xl font-heading scale-y-[1.05] origin-bottom">
+                  <h1 className="text-[36px] sm:text-[48px] md:text-[72px] lg:text-[96px] font-semibold text-white leading-[0.9] mb-8 uppercase tracking-widest drop-shadow-2xl font-heading scale-y-[1.05] origin-bottom">
                     {activeSlide.title}
                   </h1>
 
@@ -321,7 +320,7 @@ export const Home: React.FC = () => {
 
           {/* RETHINKING: Using a pure CSS Marquee is better for "pause on hover". */}
           <div className="w-full overflow-hidden group">
-            <div className="flex gap-8 w-max animate-marquee group-hover:[animation-play-state:paused] px-6 md:px-0">
+            <div className="flex gap-4 md:gap-8 w-max animate-marquee group-hover:[animation-play-state:paused] px-4 md:px-0">
               {/* First Set */}
               <DashboardWidgets />
               {/* Second Set for Loop */}

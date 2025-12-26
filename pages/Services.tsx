@@ -28,7 +28,7 @@ export const Services: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="text-smart-gold font-bold tracking-widest text-sm uppercase mb-4 block">What We Do</span>
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Elevate Your Living Experience</h1>
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Elevate Your Living Experience</h1>
               <p className="text-white/80 max-w-2xl mx-auto text-lg font-light">
                 Comprehensive automation solutions tailored for luxury residences and modern commercial spaces.
               </p>
@@ -38,8 +38,8 @@ export const Services: React.FC = () => {
       </div>
 
       {/* Services Grid */}
-      <Section className="relative z-10 -mt-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Section className="relative z-10 -mt-12 md:-mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {SERVICES.map((service, index) => (
             <Link
               key={service.id}

@@ -12,7 +12,7 @@ export const Portfolio: React.FC = () => {
   return (
     <div className="bg-white min-h-screen font-sans">
       {/* Hero Image Section - Like About Page */}
-      <div className="relative h-[60vh] min-h-[500px] overflow-hidden">
+      <div className="relative h-[60vh] min-h-[400px] md:min-h-[500px] overflow-hidden">
         <img
           src="/assets/images/img_f40680bbf23e.jpg"
           alt="Our Work"
@@ -26,7 +26,7 @@ export const Portfolio: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="text-center text-white"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight drop-shadow-md">Our Work</h1>
+            <h1 className="text-4xl md:text-7xl font-bold mb-4 tracking-tight drop-shadow-md">Our Work</h1>
             <p className="text-lg md:text-xl font-light tracking-wide opacity-90 drop-shadow-sm">A Selection of Signature Projects</p>
           </motion.div>
         </div>
@@ -43,7 +43,7 @@ export const Portfolio: React.FC = () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
           {PORTFOLIO_PROJECTS.map((project, index) => (
             <motion.div
               key={project.id}

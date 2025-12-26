@@ -31,7 +31,7 @@ export const HERO_SLIDES = [
     id: 'home-automation',
     title: 'Home Automation',
     subtitle: 'Seamlessly integrate every aspect of your home.',
-    image: '/assets/images/img_a151a9e5ca5f.jpg',
+    image: '/assets/images/hero_luxury.png',
     features: [
       { title: 'Smart Lighting', description: 'Adaptive lighting that follows your rhythm.', image: '/assets/images/img_c5686d098957.jpg' },
       { title: 'Climate Control', description: 'Perfect temperature in every room, always.', image: '/assets/images/img_4fac6e45ff2c.jpg' },

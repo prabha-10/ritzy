@@ -37,7 +37,7 @@ export const Products: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="text-smart-gold font-bold tracking-widest text-sm uppercase mb-4 block">Product Ecosystem</span>
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Designed for Distinction</h1>
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Designed for Distinction</h1>
               <p className="text-white/80 max-w-2xl mx-auto text-lg font-light">
                 Explore our curated selection of premium hardware, seamlessly integrating with your lifestyle.
               </p>
@@ -48,12 +48,12 @@ export const Products: React.FC = () => {
 
       {/* Filter Tabs */}
       <Section className="py-8 !pb-4 relative z-10 -mt-8">
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3">
           {CATEGORIES.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 border ${activeCategory === category
+              className={`px-4 py-2 md:px-6 md:py-2.5 rounded-full text-xs md:text-sm font-bold transition-all duration-300 border ${activeCategory === category
                 ? 'bg-smart-gold text-smart-charcoal border-smart-gold shadow-lg shadow-smart-gold/20 scale-105'
                 : 'bg-smart-charcoalLight text-gray-400 border-white/10 hover:border-smart-gold/30 hover:text-white'
                 }`}
@@ -68,7 +68,7 @@ export const Products: React.FC = () => {
       <Section className="!pt-0">
         <motion.div
           layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8"
         >
           <AnimatePresence mode="popLayout">
             {filteredProducts.map((product) => (
