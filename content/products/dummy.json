@@ -1,0 +1,12 @@
+{
+    "id": "dummy-product",
+    "slug": "dummy-product",
+    "name": "Dummy Product",
+    "category": "Test",
+    "shortDescription": "A test product",
+    "cardImage": "/images/placeholder.jpg",
+    "heroImage": "/images/placeholder.jpg",
+    "tagline": "Testing",
+    "fullDescription": "This is a dummy product for testing.",
+    "highlights": []
+}

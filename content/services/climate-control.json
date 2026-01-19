@@ -1,0 +1,35 @@
+{
+    "id": "climate-control",
+    "slug": "climate-control",
+    "title": "Climate & Air",
+    "shortDescription": "Maintain perfect air quality and temperature automatically.",
+    "category": "Home Automation",
+    "icon": "Wind",
+    "features": [
+        "Air Purification",
+        "Humidity Control",
+        "Smart Scheduling"
+    ],
+    "cardImage": "https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=800&h=600&fit=crop&auto=format&q=80",
+    "heroImage": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=2000&q=80",
+    "subtitle": "Perfect Comfort, Every Season",
+    "introTitle": "Breathe easier with intelligent environmental control.",
+    "introText": "Maintain the ideal temperature and humidity levels in every room of your house. Our smart climate systems learn your preferences and adjust automatically to ensure comfort while maximizing energy efficiency.",
+    "featureSections": [
+        {
+            "title": "Smart Thermostats",
+            "description": "Precision temperature control that learns your schedule and adjusts to occupancy.",
+            "image": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=800"
+        },
+        {
+            "title": "Air Quality Monitoring",
+            "description": "Sensors detect pollutants and allergens, automatically activating filtration systems to keep your air fresh.",
+            "image": "https://images.unsplash.com/photo-1616594039964-408e4044adf6?auto=format&fit=crop&w=800"
+        },
+        {
+            "title": "Humidity Control",
+            "description": "Protect your artwork, wood floors, and personal health by maintaining optimal humidity levels year-round.",
+            "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800"
+        }
+    ]
+}

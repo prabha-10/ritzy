@@ -1,0 +1,32 @@
+{
+    "id": "security",
+    "title": "Security",
+    "description": "Secure your premises.",
+    "image": "/assets/images/img_47c6ebb84f8b.jpg",
+    "icon": "ShieldCheck",
+    "offers": [
+        {
+            "title": "CCTV",
+            "image": "/assets/images/img_47c6ebb84f8b.jpg"
+        },
+        {
+            "title": "Burglar Alarm",
+            "image": "/assets/images/img_d8c80cf3670c.jpg"
+        },
+        {
+            "title": "Door Intercom",
+            "image": "/assets/images/img_fa71d290854e.jpg"
+        },
+        {
+            "title": "Digital Lock",
+            "image": "/assets/images/img_f765768aa902.jpg"
+        },
+        {
+            "title": "Gate",
+            "image": "/assets/images/img_eb2f3a0caa61.jpg"
+        }
+    ],
+    "supportedBrands": [
+        "onetouch"
+    ]
+}

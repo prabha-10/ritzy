@@ -1,0 +1,31 @@
+{
+  "id": "garden",
+  "slug": "garden",
+  "title": "Garden & Pool",
+  "shortDescription": "Automated irrigation and pool management systems.",
+  "category": "Exterior",
+  "icon": "Droplets",
+  "features": ["Soil Sensors", "Pool Heating", "Outdoor Lighting"],
+  "cardImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop&auto=format&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=2000&q=80",
+  "subtitle": "Your Outdoor Oasis, Automated",
+  "introTitle": "Extend your smart living experience to the outdoors.",
+  "introText": "Create the perfect outdoor retreat with automated pool controls, landscape lighting, and weather-based irrigation. Whether you are hosting a summer party or relaxing by the fire pit, control it all from your phone.",
+  "featureSections": [
+    {
+      "title": "Pool & Spa Control", 
+      "description": "Set water temperature, activate jets, and control lighting for your pool and spa, ensuring it is ready when you are.",
+      "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800"
+    },
+    {
+      "title": "Landscape Lighting",
+      "description": "Enhance curb appeal and safety with automated path lights and spotlights that turn on at sunset.",
+      "image": "https://images.unsplash.com/photo-1558468836-6640df250c54?auto=format&fit=crop&w=800"
+    },
+    {
+      "title": "Smart Irrigation",
+      "description": "Save water and keep your lawn lush with sprinkler systems that adjust based on local weather forecasts.",
+      "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800"
+    }
+  ]
+}

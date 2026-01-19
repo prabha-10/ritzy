@@ -1,0 +1,14 @@
+{
+    "id": "dummy-project",
+    "slug": "dummy-project",
+    "title": "Dummy Project",
+    "client": "Test Client",
+    "categories": [
+        "Test"
+    ],
+    "year": "2024",
+    "cardImage": "/images/placeholder.jpg",
+    "heroImage": "/images/placeholder.jpg",
+    "subtitle": "A test project",
+    "overview": "This is a dummy project."
+}

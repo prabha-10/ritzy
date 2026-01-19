@@ -1,0 +1,31 @@
+{
+  "id": "commercial-auto",
+  "slug": "commercial",
+  "title": "Commercial",
+  "shortDescription": "Complete automation for boardrooms and office buildings.",
+  "category": "Commercial",
+  "icon": "Building",
+  "features": ["Video Conferencing", "Lighting Schedules", "Access Control"],
+  "cardImage": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&h=600&fit=crop&auto=format&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80",
+  "subtitle": "Intelligent Business Solutions",
+  "introTitle": "Efficiency, collaboration, and control for the modern workplace.",
+  "introText": "Streamline operations and enhance productivity with our commercial automation systems. From impressive boardrooms to energy-efficient building management, we provide the tools you need to run a smarter business.",
+  "featureSections": [
+    {
+      "title": "Video Conferencing",
+      "description": "Start meetings instantly with one-touch systems that integrate video, audio, and room control.",
+      "image": "https://images.unsplash.com/photo-1517502884422-41e1f09d88bc?auto=format&fit=crop&w=800"
+    },
+    {
+      " title": "Building Management",
+      "description": "Centralized control of HVAC, lighting, and shading to optimize energy usage and reduce operational costs.",
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800"
+    },
+    {
+      "title": "Access Control",
+      "description": "Secure your premises with scalable access solutions for employees and visitors, fully integrated with your security system.",
+      "image": "https://images.unsplash.com/photo-1618090584176-715c7f0a910e?auto=format&fit=crop&w=800"
+    }
+  ]
+}

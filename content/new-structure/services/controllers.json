@@ -1,0 +1,24 @@
+{
+    "id": "controllers",
+    "title": "Controllers",
+    "description": "Centralized control.",
+    "image": "/assets/images/img_91b150fa96d3.jpg",
+    "icon": "Gamepad2",
+    "offers": [
+        {
+            "title": "Universal Remote",
+            "brands": [
+                "rti",
+                "casatunes",
+                "procontrol"
+            ],
+            "image": "/assets/images/img_91b150fa96d3.jpg"
+        }
+    ],
+    "supportedBrands": [
+        "rti",
+        "okas",
+        "casatunes",
+        "procontrol"
+    ]
+}

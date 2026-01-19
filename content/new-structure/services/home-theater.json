@@ -1,0 +1,44 @@
+{
+    "id": "home-theater",
+    "title": "Home Theater",
+    "description": "Cinematic experience at home.",
+    "image": "/assets/images/img_135ce27bc9be.jpg",
+    "icon": "Film",
+    "offers": [
+        {
+            "title": "Speakers",
+            "brands": [
+                "speakercraft",
+                "mksound"
+            ],
+            "image": "/assets/images/img_e2877fa82205.jpg"
+        },
+        {
+            "title": "Projectors",
+            "brands": [
+                "ascendo"
+            ],
+            "image": "/assets/images/img_3f750d916f33.jpg"
+        },
+        {
+            "title": "Acoustics",
+            "brands": [
+                "zerodb"
+            ],
+            "image": "/assets/images/img_10bc5fc12434.jpg"
+        },
+        {
+            "title": "Screen",
+            "brands": [
+                "ascendo"
+            ],
+            "image": "/assets/images/img_d0d6bf63ff61.jpg"
+        }
+    ],
+    "supportedBrands": [
+        "speakercraft",
+        "mksound",
+        "ascendo",
+        "zerodb"
+    ]
+}

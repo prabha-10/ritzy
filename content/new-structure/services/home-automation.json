@@ -1,0 +1,45 @@
+{
+    "id": "home-automation",
+    "title": "Home Automation",
+    "description": "Smart living solutions for your home.",
+    "image": "/assets/images/img_a151a9e5ca5f.jpg",
+    "icon": "Home",
+    "offers": [
+        {
+            "title": "Lighting & Curtains",
+            "brands": [
+                "tyba"
+            ],
+            "image": "/assets/images/img_3c0478faeddc.jpg"
+        },
+        {
+            "title": "Keypads Automation",
+            "brands": [
+                "tyba"
+            ],
+            "image": "/assets/images/img_064aab9f12a0.jpg"
+        },
+        {
+            "title": "Climate Control",
+            "subProducts": [
+                "Fan",
+                "TV",
+                "Geyser"
+            ],
+            "brands": [
+                "tyba"
+            ],
+            "image": "/assets/images/img_0a460184bffc.jpg"
+        },
+        {
+            "title": "Garden Automation",
+            "brands": [
+                "tyba"
+            ],
+            "image": "/assets/images/img_13246fc0455c.jpg"
+        }
+    ],
+    "supportedBrands": [
+        "tyba"
+    ]
+}

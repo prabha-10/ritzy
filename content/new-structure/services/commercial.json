@@ -1,0 +1,21 @@
+{
+    "id": "commercial",
+    "title": "Commercial Automation",
+    "description": "Automation for commercial spaces.",
+    "image": "/assets/images/img_03aeedc2754c.jpg",
+    "icon": "Briefcase",
+    "offers": [
+        {
+            "title": "Office Automation",
+            "useCases": [
+                "Hotels",
+                "Restaurants",
+                "Hospitality",
+                "Board Room",
+                "Conference Room"
+            ],
+            "image": "/assets/images/img_03aeedc2754c.jpg"
+        }
+    ],
+    "supportedBrands": []
+}
