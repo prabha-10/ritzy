@@ -31,7 +31,9 @@ export interface ServiceFeature {
 
 export interface ServiceSection {
   id: string; // e.g., 'home-automation', 'commercial'
+  slug?: string; // Optional for now to avoid breaking changes
   title: string; // e.g., "Home Automation"
+  heading?: string; // Optional heading for cards/details
   description: string;
   image?: string;
   icon: string; // Lucide icon name or image path

@@ -14,10 +14,12 @@ export async function getNewServices(): Promise<ServiceSection[]> {
     const order = [
         'home-automation',
         'commercial',
+        'smart-lighting', // New
         'home-theater',
         'living-room',
         'multi-room-av',
         'security',
+        'climate-control', // New
         'controllers'
     ];
 

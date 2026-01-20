@@ -20,7 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
     secondary: "bg-smart-dark text-white hover:bg-black",
     ghost: "bg-transparent text-smart-text hover:bg-smart-bg",
     outline: "border-2 border-smart-text text-smart-text hover:bg-smart-text hover:text-white",
-    white: "bg-white text-smart-text hover:bg-gray-50",
+    white: "bg-white text-smart-text hover:bg-gray-200 hover:scale-105 shadow-md hover:shadow-xl",
   };
 
   const sizes = {

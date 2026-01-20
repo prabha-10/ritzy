@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronDown, ChevronUp, Tv, ShieldCheck, Speaker, Building, Droplets, Plus, Minus, Wind, Zap, Film, MessageSquare, ClipboardList, Wrench, Cpu, GraduationCap, Target } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronUp, Tv, ShieldCheck, Speaker, Building, Droplets, Plus, Minus, Wind, Zap, Film, MessageSquare, ClipboardList, Wrench, Cpu, GraduationCap, Target, Play } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Section } from '../components/ui/Section';
 import { Button } from '../components/ui/Button';
@@ -14,67 +14,83 @@ const HAVEN_BLACK = 'rgba(0, 0, 0, 0.9)';
 
 // -- Section Components --
 
-// Hero Section (Haven Inspired)
+// Hero Section (New Immersive Design)
 const HeroSection: React.FC = () => {
+  const servicePills = [
+    { name: 'Home Automation', link: '/services/home-automation' },
+    { name: 'Lighting', link: '/services/smart-lighting' },
+    { name: 'Security', link: '/services/security' },
+    { name: 'Entertainment', link: '/services/entertainment' }
+  ];
+
   return (
-    <section className="relative h-screen overflow-hidden bg-black">
-      {/* Background Image with Gradient */}
+    <section className="relative h-screen min-h-[800px] w-full overflow-hidden bg-black">
+      {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/assets/images/hero_luxury.png"
-          alt="Luxury Smart Home"
-          className="w-full h-full object-cover"
+          src="/assets/images/services_hero.png"
+          alt="Futuristic Living Space"
+          className="w-full h-full object-cover opacity-90"
         />
-        {/* Atmospheric Gradient Overlay (Darker for white text) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="max-w-5xl"
-        >
-          <h1
-            className="text-[clamp(3rem,10vw,6rem)] font-medium leading-[1.1] tracking-tight text-white mb-8"
-            style={{ fontFamily: 'Manrope, sans-serif' }}
+      {/* Hero Content */}
+      <div className="absolute inset-0 z-10 flex flex-col justify-center px-6 md:px-12">
+        <div className="max-w-[1440px] mx-auto w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Where your vision<br />
-            finds its <span className="italic font-serif text-white/80">home.</span>
-          </h1>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+              <span className="text-white/80 uppercase tracking-widest text-sm font-medium">BEYOND AUTOMATION</span>
+            </div>
 
-          <p
-            className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-12 leading-relaxed"
-            style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 400 }}
-          >
-            Ritzy offers more than just automation—it's a space designed to reflect
-            your style, crafted with timeless precision, and built to inspire for generations.
-          </p>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white leading-[0.95] mb-8 font-heading">
+              ORCHESTRATING <br />
+              <span className="text-white/60">YOUR LIFESTYLE</span>
+            </h1>
 
-          {/* Email Signup (Haven Style) */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-lg mx-auto">
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              className="w-full sm:flex-1 px-6 py-4 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/20"
-              style={{ fontFamily: 'Manrope, sans-serif' }}
-            />
-            <button
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-black font-medium hover:bg-gray-100 transition-colors"
-              style={{ fontFamily: 'Manrope, sans-serif' }}
-            >
-              Stay Updated
-            </button>
+            <p className="max-w-xl text-lg text-white/80 leading-relaxed font-light mb-12">
+              Experience the seamless symphony of light, sound, and security.
+              Ritzy transforms your estate into a responsive entity that intuitively adapts to your every desire.
+            </p>
+
+            {/* Interactive Service Pills */}
+            <div className="flex flex-wrap gap-4">
+              {servicePills.map((service, i) => (
+                <Link to={service.link} key={service.name}>
+                  <button
+                    className="px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm hover:bg-white hover:text-black transition-all duration-300"
+                  >
+                    {service.name}
+                  </button>
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Floating Product Highlight (Decorative) */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+        className="absolute bottom-12 right-6 md:right-12 z-20 hidden md:block"
+      >
+        <div className="bg-white/10 backdrop-blur-xl border border-white/10 p-4 rounded-2xl w-64 flex items-center gap-4">
+          <div className="w-12 h-12 bg-black/50 rounded-lg flex items-center justify-center text-white">
+            <Play size={20} fill="white" />
           </div>
-        </motion.div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown size={32} className="text-white" />
-      </div>
+          <div>
+            <p className="text-white text-sm font-medium">Concept Tour</p>
+            <p className="text-white/60 text-xs">Watch the film</p>
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };
@@ -439,7 +455,8 @@ const CTASectionHaven: React.FC = () => {
         <Link to="/contact">
           <Button
             size="lg"
-            className="bg-white text-smart-text hover:bg-gray-100 rounded-full px-12 py-5 text-lg"
+            variant="white"
+            className="rounded-full px-12 py-5 text-lg"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
             Get In Touch

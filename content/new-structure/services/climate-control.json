@@ -1,0 +1,24 @@
+{
+    "id": "climate-control",
+    "title": "Climate Control",
+    "slug": "climate-control",
+    "description": "Smart climate solutions for perfect comfort and efficiency in every room.",
+    "image": "/assets/images/card_climate.png",
+    "offers": [
+        {
+            "title": "Smart Sensing",
+            "description": "Maintains optimal temperature in occupied rooms."
+        },
+        {
+            "title": "Remote Access",
+            "description": "Control your home's climate from anywhere."
+        },
+        {
+            "title": "Integration",
+            "description": "Works seamlessly with blinds and fans."
+        }
+    ],
+    "heading": "Perfect Climate",
+    "detailImage": "/assets/images/card_climate.png",
+    "sections": []
+}

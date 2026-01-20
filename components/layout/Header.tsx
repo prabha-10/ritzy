@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
                 className={({ isActive }) =>
                   `px-5 py-2 text-sm font-medium rounded-full transition-all duration-300 ${isActive
                     ? 'bg-white text-smart-dark shadow-md'
-                    : 'text-smart-dark hover:bg-black/5'
+                    : `${isScrolled ? 'text-smart-dark' : 'text-white'} hover:bg-white/10`
                   }`
                 }
               >
@@ -62,7 +62,7 @@ export const Header: React.FC = () => {
 
         {/* Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <div className="flex items-center gap-4 text-smart-text">
+          <div className={`flex items-center gap-4 ${isScrolled ? 'text-smart-text' : 'text-white'}`}>
             <Search size={20} className="cursor-pointer hover:text-smart-accent transition-colors" />
           </div>
           <Link to="/contact">
@@ -74,7 +74,7 @@ export const Header: React.FC = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-smart-text"
+          className={`md:hidden ${isScrolled ? 'text-smart-text' : 'text-white'}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}

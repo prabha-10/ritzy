@@ -1,0 +1,24 @@
+{
+    "id": "smart-lighting",
+    "title": "Smart Lighting",
+    "slug": "smart-lighting",
+    "description": "Transform your home with intelligent lighting that adapts to your mood and schedule.",
+    "image": "/assets/images/card_lighting.png",
+    "offers": [
+        {
+            "title": "Mood Scenes",
+            "description": "One touch to change the entire atmosphere."
+        },
+        {
+            "title": "Automated Schedules",
+            "description": "Lights that work around your daily life."
+        },
+        {
+            "title": "Energy Saving",
+            "description": "Efficient control to reduce power consumption."
+        }
+    ],
+    "heading": "Intelligent Illumination",
+    "detailImage": "/assets/images/card_lighting.png",
+    "sections": []
+}
